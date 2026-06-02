@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Malaysia Tourism Recovery</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Malaysia Tourism Recovery and Regional Differences</h1>
+        <p>
+            Malaysia's tourism industry experienced a severe decline during the travel disruption period,
+            especially around 2020 and 2021. This visualisation focuses on the recovery stage:
+            how international visitors returned, how domestic tourism rebounded, and how recovery patterns
+            differed across Malaysian states.
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>International Visitors Returned to Malaysia</h2>
+            <p>
+                Select a source country to see how monthly visitor arrivals to Malaysia changed over time.
+                The dropdown interaction helps compare whether different visitor markets returned at the same pace.
+            </p>
+
+            <div id="arrival_country_line"></div>
+        </section>
+
+        <section>
+            <h2>Who Returned to Malaysia in 2024?</h2>
+            <p>
+                The charts below show the main source markets of international visitors and the monthly gender
+                composition of arrivals in 2024. Together, they show both where visitors came from and how total
+                arrivals were distributed across male and female visitors.
+            </p>
+
+            <div class="two-column">
+                <div id="top_country_bar"></div>
+                <div id="gender_month_bar"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Which Month Was the Most Popular in 2024?</h2>
+            <p>
+                This chart shows total international visitor arrivals to Malaysia by month in 2024.
+                It helps identify peak travel months during the recovery period.
+            </p>
+
+            <div id="monthly_arrivals_2024_bar"></div>
+        </section>
+
+        <section>
+            <h2>Recovery Was Uneven Across Malaysian States</h2>
+            <p>
+                The map below shows the average occupancy rate of hotels by state in 2024.
+                Higher occupancy rates suggest stronger accommodation demand, but the spatial pattern shows that
+                tourism recovery was not equally distributed across all states.
+            </p>
+
+            <div id="hotel_aor_map"></div>
+
+            <p>
+                The ranking chart makes the state differences easier to compare. It shows which states recorded
+                higher hotel occupancy rates and which states remained lower in 2024.
+            </p>
+
+            <div id="hotel_aor_bar"></div>
+
+            <p>
+                The chart below compares domestic and foreign hotel guests by state in 2024.
+                It shows that some states relied more on domestic guests, while Kuala Lumpur had a much larger
+                share of foreign hotel guests.
+            </p>
+
+            <div id="hotel_guests_stacked_bar"></div>
+        </section>
+
+        <section>
+            <h2>Domestic Tourism Also Recovered Strongly</h2>
+            <p>
+                The two charts below show that domestic tourism expenditure and domestic visitor numbers followed
+                almost the same recovery pattern. Both dropped sharply in 2020 and 2021, then rebounded strongly
+                from 2022 onwards, reaching their highest levels in 2024.
+            </p>
+
+            <div class="two-column-domestic">
+                <div id="domestic_expenditure_line"></div>
+                <div id="domestic_visitors_line"></div>
+            </div>
+
+            <p>
+                The bar chart below highlights how sharply domestic tourism changed from year to year, including
+                the severe decline in 2020–2021 and the strong rebound in 2022.
+            </p>
+
+            <div id="domestic_change_bar"></div>
+        </section>
+
+        <section>
+            <h2>Key Takeaways</h2>
+            <p>
+                Malaysia's tourism recovery was strong, but not uniform. International arrivals returned from
+                key source markets, domestic tourism expenditure and visitor numbers recovered together, and hotel
+                performance varied clearly across states. This suggests that Malaysia's tourism recovery should be
+                understood not only as a national rebound, but also as a pattern shaped by source markets, seasons
+                and regional differences.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Author:</strong> Tian Shuang Zhang</p>
+        <p><strong>Data sources:</strong> Department of Statistics Malaysia (DOSM), data.gov.my, and Tourism Malaysia Statistics in Brief 2024.</p>
+        <p><strong>Created for:</strong> FIT2179 Data Visualisation 2, Semester 1, 2026.</p>
+        <p><strong>Note:</strong> Vega-Lite was used to create the maps and charts. Generative AI was used for coding and wording assistance.</p>
+    </footer>
+
+    <script src="js/vega_lite_vis.js"></script>
+</body>
+
+</html>
